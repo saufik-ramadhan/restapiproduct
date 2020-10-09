@@ -1,5 +1,4 @@
-const passwordDB = "admin";
-const databaseName = "paketidDB";
+const dbName = "dummy";
 
 module.exports = {
   // mongoURI: `mongodb+srv://admin:${passwordDB}@cluster0.1gdgb.mongodb.net/${databaseName}?retryWrites=true&w=majority`,

@@ -9,6 +9,7 @@ var config = require("config");
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 var packageRouter = require("./routes/package");
+var productRouter = require("./routes/product");
 
 var app = express();
 var db = require("./config/keys").mongoURI;
@@ -41,5 +42,6 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
 app.use("/", packageRouter);
+app.use("/", productRouter);
 
 module.exports = app;
